@@ -1,4 +1,4 @@
-const { handleReviewCreated } = require('../src/events/reviewHandler');
+import { handleReviewCreated } from '../src/events/reviewHandler';
 
 describe('Review Event Handler', () => {
     it('should process a valid event', async () => {
@@ -6,7 +6,7 @@ describe('Review Event Handler', () => {
             id: 'evt-1',
             type: 'review:created',
             payload: {
-                review: { id: 'rev-1', productId: 'prod-1' }
+                review: { id: 'rev-1', productId: 'prod-1', rating: 5, createdAt: new Date() }
             }
         };
 

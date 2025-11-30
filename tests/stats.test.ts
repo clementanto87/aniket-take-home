@@ -1,4 +1,4 @@
-const { getReviewSummary } = require('../src/services/statsService');
+import { getReviewSummary } from '../src/services/statsService';
 
 describe('Stats Service', () => {
     it('should calculate correct statistics', () => {

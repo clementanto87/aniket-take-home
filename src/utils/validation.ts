@@ -5,7 +5,7 @@
  * @param {any} value 
  * @returns {boolean}
  */
-function validateRequired(value) {
+export function validateRequired(value: any): boolean {
     // TODO: Implement
     return true;
 }
@@ -15,9 +15,7 @@ function validateRequired(value) {
  * @param {string} email 
  * @returns {boolean}
  */
-function validateEmail(email) {
+export function validateEmail(email: string): boolean {
     // TODO: Implement
     return true;
 }
-
-module.exports = { validateRequired, validateEmail };
