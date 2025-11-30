@@ -24,7 +24,7 @@ Welcome to the coding challenge! This repository contains a basic Node.js/Expres
 ## Tasks
 
 ### Task 1: Implement Reviews API
-**File:** `src/routes/reviews.js`
+**File:** `src/routes/reviews.ts`
 
 Implement the following endpoints:
 1.  `POST /reviews`: Create a new review.
@@ -37,7 +37,7 @@ Implement the following endpoints:
     *   **Response:** Array of review objects.
 
 ### Task 2: Review Statistics Aggregator
-**File:** `src/services/statsService.js`
+**File:** `src/services/statsService.ts`
 
 Implement the `getReviewSummary(productId)` function.
 *   Calculate the average rating, total number of reviews, and highest rating for a given `productId`.
@@ -45,7 +45,7 @@ Implement the `getReviewSummary(productId)` function.
 *   Ensure the function is clean and testable.
 
 ### Task 3: Event Handler for Review Created
-**File:** `src/events/reviewHandler.js`
+**File:** `src/events/reviewHandler.ts`
 
 Implement `handleReviewCreated(event)`.
 *   Simulate an event-driven architecture where this function is called when a review is created.
@@ -56,14 +56,14 @@ Implement `handleReviewCreated(event)`.
 *   Ensure the logic is idempotent (processing the same event ID twice should not send two emails).
 
 ### Task 4: Input Validation & Error Handling
-**File:** `src/utils/validation.js` & `src/utils/errors.js`
+**File:** `src/utils/validation.ts` & `src/utils/errors.ts`
 
 *   Implement reusable validation functions (e.g., `validateEmail`, `validateRequired`).
 *   Create structured error classes (e.g., `ValidationError`, `NotFoundError`).
 *   Integrate this validation into your API endpoints from Task 1.
 
 ### Task 5: Pagination Logic
-**File:** `src/routes/reviews.js`
+**File:** `src/routes/reviews.ts`
 
 Update `GET /reviews` to support pagination.
 *   **Query Params:** `page` (default 1), `pageSize` (default 10).
